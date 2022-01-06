@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Apply job | EMS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="css/main.css">
+	
+	
+</head>
+<body>
+	<header>
+		<nav id="container">
+			<div class="logo">
+				<a href="index.html">EMS</a>
+			</div>
+			<ul >
+				<li><a  href="index.html">HOME</a></li>
+				<li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="jobs.html">JOBS</a></li>
+				<li><a  href="contact.html">CONTACT</a></li>
+				<li><a  href="elogin.html">LOG IN</a></li>
+			</ul>
+		</nav>
+	</header>
+
+    <div class="page-wrapper mt-5  font-robo">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-1">
+                <div class="card-heading"></div>
+                <div class="card-body">
+                    <h2 class="title">Apply Job Registration</h2>
+                    <form action="process/applyjobprocess.php" method="POST" enctype="multipart/form-data">
+
+
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                     <input class="input--style-1" type="text" placeholder="First Name" name="firstName" required="required">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <input class="input--style-1" type="text" placeholder="Last Name" name="lastName" required="required">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="input-group">
+                            <input class="input--style-1" type="email" placeholder="Email" name="email" required="required">
+                        </div>
+                        <p>Birthday</p>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <input class="input--style-1" type="date" placeholder="BIRTHDATE" name="birthday" required="required">
+                                   
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="gender">
+                                            <option disabled="disabled" selected="selected">GENDER</option>
+                                            <option value="Male">Male</option>
+                                            <option value="Female">Female</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="input-group">
+                            <input class="input--style-1" type="number" placeholder="Contact Number" name="contact" required="required" >
+                        </div>
+
+                        <div class="input-group">
+                            <input class="input--style-1" type="number" placeholder="NID" name="nid" required="required">
+                        </div>
+
+                        
+                         <div class="input-group">
+                            <input class="input--style-1" type="text" placeholder="Address" name="address" required="required">
+                        </div>
+
+                        <div class="input-group">
+                            <input class="input--style-1" type="text" placeholder="Department" name="dept" required="required">
+                        </div>
+
+                        <div class="input-group">
+                            <input class="input--style-1" type="text" placeholder="Degree" name="degree" required="required">
+                        </div>
+
+                        <div class="input-group">
+                            <input class="input--style-1" type="text" placeholder="Experience" name="exp" required="required">
+                        </div>
+
+                        <div class="input-group">
+                            <input class="input--style-1" type="number" placeholder="Accept Salary" name="asalary">
+                        </div>
+
+                        <div class="input-group">
+                            <input class="input--style-1" type="file" placeholder="file" name="file">
+                        </div>
+ 
+
+
+                        <div class="p-t-20">
+                            <button class="btn btn--radius btn--green" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+
+
+</body>
+</html>
+

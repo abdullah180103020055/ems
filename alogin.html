@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Log In | EMS</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="css/styleview.css">
+</head>
+<body>
+			 
+	<header>
+		<nav id="container">
+			<div class="logo">
+				<a href="index.html">EMS</a>
+			</div>
+			<ul >
+			    <li><a  href="index.html">Home</a></li>
+				<li><a  href="elogin.html">Employee Login</a></li>
+				<li><a href="officelogin.html">Office Login</a></li>
+				<li><a  href="hrlogin.html">HR Login</a></li>
+				<li><a  href="alogin.html">Admin Login</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section id="loging_box">
+	<div class="loginbox">
+    <img src="assets/admin.png" class="avatar">
+        <h1>Admin Login </h1>
+        <form action="process/aprocess.php" method="POST">
+            <p>Email</p>
+            <input type="text" name="mailuid" placeholder="Enter Email Address" required="required">
+            <p>Password</p>
+            <input type="password" name="pwd" placeholder="Enter Password" required="required">
+            <input type="submit" name="login-submit" value="Login">
+           
+        </form>
+        
+    </div>
+</section>
+</body>
+</html>
